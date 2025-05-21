@@ -14,3 +14,22 @@ let accountCity;
 const id = Symbol('123')
 const anotherId = Symbol('123');
 
+//Types - Arrays, Objects, Functions
+
+//array : always in square bracket []
+
+const flowers = ["mogra", "lily", "rose"]
+
+//object : are in { } brackets
+
+let Myobject = { 
+    name: "payal",
+    age: 25,
+
+}
+
+//function - (){} both brackets are there in function
+
+const Myfunction = function(){
+    console.log("hello world")
+}
