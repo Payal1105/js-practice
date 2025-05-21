@@ -32,4 +32,34 @@ let Myobject = {
 
 const Myfunction = function(){
     console.log("hello world")
+
 }
+
+
+/////////////////////////////////////////////////
+
+//MEMORY
+// Stack memory (use in primitive type) & Heap Memory (use in non-primitive type)
+//stack example
+
+let myBookName = "wings of fire"
+let secondBookName = myBookName
+secondBookName = "Destiny"
+
+console.log(myBookName);
+console.log(secondBookName);
+//In stack memory we get changes in copy file not the main file..
+
+//Heap Example
+
+let userOne = {
+    email: "payal@gmail.com",
+    age: "22years"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "p@googl.com"
+
+console.log(userOne);
+console.log(userTwo);
