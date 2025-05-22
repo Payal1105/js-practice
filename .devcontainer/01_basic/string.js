@@ -23,6 +23,10 @@ const anotherString = bookName.slice(14,-4);
 console.log(newString);
 console.log(anotherString);
 
+const oneString = "   Payal   "
+console.log(oneString);
+console.log(oneString.trim());
 
+const url = "https://www.youtube.com/watch?v=fozwNnFunlo&list"
 
-
+console.log(url.replace('v=foz', '-'));
