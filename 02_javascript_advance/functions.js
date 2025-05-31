@@ -43,7 +43,7 @@ return num1
 //console.log(calculateCartPrice(1890,1250,765,300,500));
 
 const user = {
-    username: "payal@123",
+    username: "sam@123",
     price: 299
    
 }
@@ -53,3 +53,4 @@ function handleObject (anyobject){
     
 }
 handleObject(user)
+
