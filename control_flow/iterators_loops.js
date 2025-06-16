@@ -91,5 +91,29 @@ map.set('IN', "India")
 //console.log(map)
 
 for (const [key,value] of map) {
-    console.log(key, ':=>', value)
+  //  console.log(key, ':=>', value)
 }
+//______________________________________________________________________________________________________
+
+//for In Loop ====>
+
+const programming1 = ["js","C++","Python","React"]
+
+for (const key in programming1) {
+   //console.log(programming1);
+}
+
+const programming = ["js","C++","Python","React"]
+
+for (const key in programming) {
+   //console.log(programming[key]);
+}
+
+programming.forEach(function(item) {
+    //console.log(item)
+})
+
+const programming2 = ["js","C++","Python","React"]
+array.forEach((item,index) => {
+    //console.log(item,index)
+});
