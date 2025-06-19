@@ -14,17 +14,18 @@ addBtn.addEventListener("click", () => {
   const li = document.createElement("li");
   li.className = "task-item";
   li.innerHTML = `
+    <input type="checkbox" class="task-check">
     <span>${taskText}</span>
-    <button>Delete</button>
+    <button class="delete-btn">Delete</button>
   `;
 
-  // Toggle complete on click
-  li.querySelector("span").addEventListener("click", () => {
-    li.classList.toggle("completed");
+  // Checkbox toggle complete
+  li.querySelector(".task-check").addEventListener("change", (e) => {
+    li.classList.toggle("completed", e.target.checked);
   });
 
-  // Delete button functionality
-  li.querySelector("button").addEventListener("click", () => {
+ 
+  li.querySelector(".delete-btn").addEventListener("click", () => {
     li.remove();
   });
 
