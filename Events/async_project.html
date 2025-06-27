@@ -9,31 +9,48 @@
     <h1>Async Projects</h1>
     <button id="start">Start</button>
     <button id="stop">Stop</button>
-
-</body>
-<script>
-    // const sayDate = function(str){
+  <!-- // const sayDate = function(str){
     //     console.log(str,Date.now());
     // }
     // const intervalId = setInterval(sayDate,1000,"hi")
     // clearInterval(interval)
 
-   const sayName = function () {
-      intervalId = setInterval(() => {
-        const now = new Date();
-        console.log(`Payal | Time: ${now.toLocaleString()}`);
-      }, 1000);
-    };
+  //  const sayName = function () {
+  //     intervalId = setInterval(() => {
+  //       const now = new Date();
+  //       console.log(`Payal | Time: ${now.toLocaleString()}`);
+  //     }, 1000);
+  //   };
 
-    document.getElementById('start').addEventListener('click', sayName);
+  //   document.getElementById('start').addEventListener('click', sayName);
 
-    document.getElementById('stop').addEventListener('click', function () {
-      clearInterval(intervalId);
-      console.log("Stopped logging.");
-    });
+  //   document.getElementById('stop').addEventListener('click', function () {
+  //     clearInterval(intervalId);
+  //     console.log("Stopped logging.");
+  //   }); -->
+</body>
+    
+<script>
+   //Background color changing
+   const randomColor = function(){
+    const hex = '0123456789ABCDEF'
+    let color = '#'
+    for (let i = 0; i < 6; i++) {
+      color += hex[Math.floor(Math.random()*16)] ;
+    } 
+    return color;
+   };
 
+   const startChangingColor = function(){
+    document.body.style.backgroundColor = randomColor();
+   }
+   const stopChangingColor = function(){}
 
+   document.querySelector("#start").addEventListener
+   ('clicl',startChangingColor)
 
+   document.querySelector("#stop").addEventListener
+   ('clicl',stopChangingColor)
 
 </script>
 </html>
